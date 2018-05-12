@@ -1,44 +1,66 @@
 <html>
 <head>
-    <title>HTML5 Audio Player</title>
+    <title>Guitar Covers Audio</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<div id="container">
-		<div id="audio-image">
-			<img class="cover">
-		</div>
-		<div id="audio-player">
-			<div id="audio-info">
-				<span class="artist"></span> - <span class="title"></span>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="audio-image">
+			<img class="cover img-responsive">
 			</div>
+		</div>
+		<div class="row">
+			<div id="audio-info">
+				<span class="artist"></span>
+			</div>
+		</div>
+		<div class="row">
 			<input id="volume" type="range" min="0" max="10" value="4">
-			<br>
+		</div>
+		<div class="row">
 			<div id="buttons">
 				<span>
+					<div class="col-xs-3">
 					<button id="prev"></button>
+					</div>
+					<div class="col-xs-3">
 					<button id="play"></button>
 					<button id="pause"></button>
+					</div>
+					<div class="col-xs-3">
 					<button id="stop"></button>
+					</div>
+					<div class="col-xs-3">
 					<button id="next"></button>
+					</div>
 				</span>
 			</div>
-			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="row">
 			<div id="tracker">
 				<div id="progress-bar">
 					<span id="progress"></span>
 				</div>
 				<span id="duration"></span>
 			</div>
-			<div class="clearfix"></div>
-			<ul id="playlist" class="hidden">
-				<li class="active" song="karunesh - Punjab.mp3" cover="punjab.jpg" artist="Karunesh">Global Spirit</li>
-				<li song="Zara Zara Final.m4a" cover="zara.jpg" artist="Aman & Haris">Zara Zara</li>
-				
+		</div>
+		<div class="clearfix"></div>
+		<div class="row">
+			<ul id="playlist" >
+				<li class="active" song="KyaHuaTeraWada.m4a" cover="atif.jpg" artist="Atif OldSongs Mashup">Kya Hua Tera Wada<span id="length">1:31</span></li>
+				<li song="Zara Zara Final.m4a" cover="zara.jpg" artist="RHTDM">Zara Zara<span id="length">3:23</span></li>
+				<li song="Bhulado.m4a" cover="raeth.jpg" artist="Raeth">Bhula Do<span id="length">3:34</span></li>
 			</ul>
 		</div>
 	</div>
-	
+	<div class="container-fluid">
+	</div>
+	<footer class="footer text-center">
+		<p>© Music Compilations by Aman & Haris</p> 
+	</footer>
 	<script src="js/jquery.js"></script>
 	<script src="js/main.js"></script>
 </body>
