@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Day 1</title>
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="keys">
+	<div data-key="65" class="key">
+		<kbd>A</kbd>
+		<span class="sound">clap</span>
+	</div>
+	<div data-key="83" class="key">
+		<kbd>S</kbd>
+		<span class="sound">hihat</span>
+	</div>
+	<div data-key="75" class="key">
+		<kbd>K</kbd>
+		<span class="sound">tom</span>
+	</div>
+	<div data-key="76" class="key">
+		<kbd>L</kbd>
+		<span class="sound">tink</span>
+	</div>
+</div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+  
+<script>
+	window.addEventListener('keydown',function(e){
+		console.log(e);
+	});
+</script>
+  
+</body>
+</html>
